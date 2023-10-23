@@ -23,6 +23,7 @@ class UserController {
             age,
             email,
             password,
+            role,
           }),
           message: "Error tratando de crear el usuario",
           code: 400,

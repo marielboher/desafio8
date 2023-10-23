@@ -30,14 +30,15 @@ class AuthController {
       if (userData && userData.user) {
         console.log("Setting session and cookie");
         req.session.user = {
-          id: userData.user.id || userData.user._id,
-          email: userData.user.email,
-          first_name: userData.user.firstName || userData.user.first_name,
-          last_name: userData.user.lastName || userData.user.last_name,
-          age: userData.user.age,
-          role: userData.user.role,
+            id: userData.user.id || userData.user._id,
+            email: userData.user.email,
+            first_name: userData.user.firstName || userData.user.first_name,
+            last_name: userData.user.lastName || userData.user.last_name,
+            age: userData.user.age,
+            role: userData.user.role,
+            cart: userData.user.cart 
         };
-      }
+    }
 
       console.log("Full user data object:", userData.user);
 
